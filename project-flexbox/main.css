@@ -254,3 +254,15 @@ header .menu {
   height: 10px;
   margin-right: 5px;
 }
+
+footer {
+  background-color: #122a57;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer{
+  color: #ffffff;
+  justify-content: space-between;
+}
