@@ -30,7 +30,7 @@ header {
   background: #122a57;
 
   height: 100px;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -63,7 +63,6 @@ header .menu {
   min-height: 200px;
 }
 
-
 .texto-apresentacao h1 {
   color: #122a57;
   font-size: 48px;
@@ -87,7 +86,7 @@ header .menu {
 }
 
 #quem-somos {
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 }
@@ -102,21 +101,83 @@ header .menu {
   font-size: 32px;
   color: #122a57;
   display: flex;
-  
 }
 
 #quem-somos h2::before {
-  content: "";
+  content: '';
   height: 50px;
   width: 5px;
   margin-right: 5px;
   font-size: 32px;
   background: #122a57;
-    
 }
 
-
 #quem-somos img {
-  min-width:350px;
-  margin-right: 50px;
+  min-width: 420px;
+}
+
+.container-externo {
+  background: #122a57;
+  width: 100%;
+}
+
+#servicos {
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+#servicos h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.lista-servico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-servico .item-servico {
+  text-align: center;
+}
+
+.item-servico a {
+  background-color: #ffffff;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  
+  display: inline-block;
+  margin-top: 20px;
+  height: 30px;
+  width: 120px;
+  
+  line-height: 30px;
+  
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.item-servico a:hover {
+  width: 200px;
+}
+
+.item-servico p {
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+}
+
+.item-servico .pct-viagem,
+.item-servico .hospedagem {
+  width: 200px;
+}
+
+.item-servico img {
+  justify-content: center;
+  width: 80%;
+  margin: auto;
 }
