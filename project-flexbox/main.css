@@ -23,6 +23,8 @@ div img {
   display: flex;
   margin: auto;
   max-width: 992px;
+  min-width: 320px;
+  padding: 10px 15px;
   width: 100%;
 }
 
@@ -236,7 +238,6 @@ header .menu {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .item-plano ul li {
@@ -262,7 +263,58 @@ footer {
   align-items: center;
 }
 
-footer .footer{
+footer .footer {
   color: #ffffff;
   justify-content: space-between;
+}
+
+/*Mobile*/
+
+@media (max-width: 992px) {
+  .flex-conatiner {
+    flex-direction: column;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+
+  .apresentacao .texto-apresentacao {
+    width: 100%;
+  }
+
+  #quem-somos {
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  #quem-somos img {
+    min-width: 320px;
+    margin: auto;
+  }
+
+  .lista-servico {
+    flex-direction: column;
+  }
+
+  .lista-servico .item-servico {
+    margin-bottom: 20px;
+  }
+
+  .lista-servico img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .lista-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .lista-planos .item-plano {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
