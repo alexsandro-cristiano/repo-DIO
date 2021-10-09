@@ -24,6 +24,11 @@ button {
   text-align: center;
 }
 
+.zero {
+  margin-top: 2.5rem;
+  border-radius: 0%;
+}
+
 #counter {
   display: flex;
 }
