@@ -26,9 +26,11 @@ label {
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
+  margin-bottom: .9rem;
 }
+
 span {
-  font-weight: 600;
+  font-weight: 400;
   font-size: large;
 }
 
